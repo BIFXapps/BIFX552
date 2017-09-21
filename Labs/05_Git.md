@@ -2,20 +2,7 @@ Repository creation using GitHub
 ================================
 
 Create a repository, *firstRepo*, on GitHub and clone it to your home
-directory on the server. Let GitHub create an empty *README.md* file
-before you clone it.
-
-Project organization
-====================
-
--   Set up a project directory for *firstRepo* using a single command
-    (see pg 27 of Buffalo for a hint on how to do this). It should have
-    the following subdirectories:
-    -   Data
-        -   Raw
-        -   Intermediate
-    -   Output
-    -   Scripts
+directory on the server. Let GitHub create an empty *README.md* file.
 
 Repository initialization
 =========================
@@ -37,6 +24,18 @@ or
 We could make *firstRepo* into a git repository using `git init`, but we
 already let GitHub do this for us. Go ahead and clone *firstRepo* onto
 your local machine.
+
+Project organization
+====================
+
+-   Set up a project directory for *firstRepo* using a single command
+    (see pg 27 of Buffalo for a hint on how to do this). It should have
+    the following subdirectories:
+    -   Data
+        -   Raw
+        -   Intermediate
+    -   Output
+    -   Scripts
 
 Markdown
 ========
@@ -152,12 +151,16 @@ Start by making a simple R script, *script1.R* that creates a pdf figure
 from a randomly generated cloud of points. Comment your code to document
 what it is doing at each step.
 
+    library(tidyverse)
+    library(cowplot)
+
     set.seed(297834) # pick your own seed
-    x <- rnorm(100)
-    y <- x + rnorm(100)
+    dat <- data_frame(pred = rnorm(100),
+                      resp = pred + rnorm(100))
 
     pdf('../out1.pdf')
-    plot(x, y)
+    ggplot(dat, aes(pred, resp)) +
+        geom_point()
     dev.off()
 
 Get some data
