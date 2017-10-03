@@ -189,3 +189,111 @@ Here are a few keyboard shortcuts that you may find helpful.
     long commands.
 -   `Ctrl a`: This will move the cursor to beginning of line.
 -   `Ctrl e`: This will move the cursor to the end of the line.
+
+Asside on the midterm exam
+==========================
+
+The exam will consist of three tasks worth 50 points each, and the
+rubric below will be used to grade your midterm exam.
+
+<table>
+<thead>
+<tr class="header">
+<th align="left">Tasks</th>
+<th align="left">Skill level</th>
+<th align="right">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Code</td>
+<td align="left">Appropriate comments</td>
+<td align="right">10%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Appropriate indentation</td>
+<td align="right">10%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Use of white space</td>
+<td align="right">5%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Appropriate vectorization</td>
+<td align="right">10%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">File header</td>
+<td align="right">5%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Runtime errors in code</td>
+<td align="right">-15%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><strong>40%</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Git repository</td>
+<td align="left">Proper structure</td>
+<td align="right">10%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Clean repository history</td>
+<td align="right">10%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Commit only complete work</td>
+<td align="right">5%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Commit only related changes</td>
+<td align="right">5%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Small commits</td>
+<td align="right">5%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Appropriate use of <em>.gitignore</em></td>
+<td align="right">5%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><strong>40%</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">R Package</td>
+<td align="left">Installs without errors or warnings</td>
+<td align="right">10%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">Documentation complete</td>
+<td align="right">5%</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Appropriate NAMESPACE entries</td>
+<td align="right">5%</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><strong>20%</strong></td>
+</tr>
+</tbody>
+</table>
