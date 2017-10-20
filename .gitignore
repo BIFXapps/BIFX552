@@ -1,0 +1,6 @@
+*.docx
+.Rhistory
+*.pdf
+*~
+.Rapp.history
+*[0-9][0-9].Rmd
