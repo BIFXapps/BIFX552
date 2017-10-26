@@ -103,80 +103,99 @@ regular expression parts:
 <tr class="header">
 <th>Type</th>
 <th>Regex</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Anchors</td>
 <td><code>^</code></td>
+<td>Beginning of the line</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>$</code></td>
+<td>End of the line</td>
 </tr>
 <tr class="odd">
 <td>Character Sets</td>
 <td><code>[a-z]</code></td>
+<td>A lower case character</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>[A-Z]</code></td>
+<td>An upper case character</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td><code>[0-9]</code></td>
+<td>An number character</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>.</code></td>
+<td>Any single character</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td><code>[abc]</code></td>
+<td>Any letter in {a, b, c}</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>[^a]</code></td>
+<td>Any character that is <em>not</em> an 'a'</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td><code>\e</code></td>
+<td>Escape</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>\f</code></td>
+<td>Form feed</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td><code>\n</code></td>
+<td>New line</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>\r</code></td>
+<td>Carriage return</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td><code>\t</code></td>
+<td>Tab</td>
 </tr>
 <tr class="even">
 <td>Modifiers</td>
 <td><code>?</code></td>
+<td>0 or 1 repetitions</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td><code>*</code></td>
+<td>0 or more repetitions</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>+</code></td>
+<td>1 or more repetitions</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td><code>\{n\}</code></td>
+<td>exactly <em>n</em> repetitions</td>
 </tr>
 <tr class="even">
 <td></td>
 <td><code>\{n,m\}</code></td>
+<td>at least <em>n</em> and not more than <em>m</em> repetitions</td>
 </tr>
 </tbody>
 </table>
@@ -209,3 +228,27 @@ case-insensitive.
 -   "The other end, the other end" -&gt; "An other end, an other end"
 -   "chr12842787428425431"
 -   Pull the ranges of all exons in *Mus\_musculus.GRCm38.74.gtf.gz*
+
+Bonus Challenge Problem
+=======================
+
+Using the `curl` package in R, download the 2016 dataset from the [NEISS
+site](https://www.cpsc.gov/Research--Statistics) and recreate the
+following figures. If you would like a hint, these are all of the
+functions I used (many of which we haven't discussed in class):
+
+-   `base::file.exists()`
+-   `base::grep()`
+-   `base::if()`
+-   `base::tempfile()`
+-   `curl::curl_download()`
+-   `dplyr::count()`
+-   `dplyr::mutate()`
+-   `ggplot2::geom_line()`
+-   `ggplot2::geom_point()`
+-   `ggplot2::geom_smooth()`
+-   `ggplot2::ggplot()`
+-   `ggplot2::xlab()`
+-   `readxl::read_excel()`
+
+![](10_BioinformaticsData_files/figure-markdown_strict/solution-1.png)![](10_BioinformaticsData_files/figure-markdown_strict/solution-2.png)
