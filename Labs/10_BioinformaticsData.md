@@ -70,10 +70,35 @@ files. In our case, an inner join is sufficient. If we were missing some
 values from *example\_lengths.txt*, however, we might want to do use the
 `-a` option.
 
+    # left join
+        join
+            -a 1
+            -1 <column number of example_sorted.bed to match on>
+            -2 <column number(s) of example_lengths.txt to match on>
+            <path to file 1>
+            <path to file 2>
+            
+    # right join
+        join
+            -a 2
+            -1 <column number of example_sorted.bed to match on>
+            -2 <column number(s) of example_lengths.txt to match on>
+            <path to file 1>
+            <path to file 2>
+
+    # outer join
+        join
+            -a 1
+            -a 2
+            -1 <column number of example_sorted.bed to match on>
+            -2 <column number(s) of example_lengths.txt to match on>
+            <path to file 1>
+            <path to file 2>
+
 -   Truncate *example\_lengths.txt* using this command:
     `grep -v chr3 example_lengths.txt > example_lengths_trunc.txt`
 -   Perform the join above using the same command as before.
--   Perform the join again using the `-a 2` option.
+-   Perform the join again using the `-a 2` option (right join).
 
 Exercise 3
 ==========
@@ -223,10 +248,13 @@ occurrence, and you can use the `i` option to make the search
 case-insensitive.
 
 -   "the other end" -&gt; "an other end"
-    -   `echo "the other end" | sed s/the /an/`
+    -   `echo "the other end" | sed s/the/an/`
 -   "the other end, the other end" -&gt; "an other end, an other end"
+
 -   "The other end, the other end" -&gt; "An other end, an other end"
--   "chr12842787428425431"
+
+-   `"chr1\t28427874\t28425431"` -&gt; "chr1:28427874-28425431"
+
 -   Pull the ranges of all exons in *Mus\_musculus.GRCm38.74.gtf.gz*
 
 Bonus Challenge Problem
@@ -234,8 +262,10 @@ Bonus Challenge Problem
 
 Using the `curl` package in R, download the 2016 dataset from the [NEISS
 site](https://www.cpsc.gov/Research--Statistics) and recreate the
-following figures. If you would like a hint, these are all of the
-functions I used (many of which we haven't discussed in class):
+following figures depicting the incidence of basketball-related injuries
+over the year (by day in the first figure and by day of the week in the
+second figure). If you would like a hint, these are all of the functions
+I used (many of which we haven't discussed in class):
 
 -   `base::file.exists()`
 -   `base::grep()`
