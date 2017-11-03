@@ -43,7 +43,7 @@ Retrieving information
     -   `columns` specifies the columns you you want returned
     -   `keytype` specifies the identifier type in `keys`
 
-\*\*Problem 2:\* Complete the R command below to return the transcript
+**Problem 2:** Complete the R command below to return the transcript
 name, strand and chromosome for all gene IDs in the *keys* variable:
 
     select(txdb, 
@@ -58,7 +58,24 @@ GRanges objects
     tx <- transcripts(txdb)
 
     # only fetch transcripts on the + strand (of chromosome 15, right?)
-    tx <- transcripts(txdb, filter = list(tx_strand = '+'))
+    transcripts(txdb, filter = list(tx_strand = '+'))
+
+    ## GRanges object with 1732 ranges and 2 metadata columns:
+    ##          seqnames                 ranges strand |     tx_id     tx_name
+    ##             <Rle>              <IRanges>  <Rle> | <integer> <character>
+    ##      [1]    chr15   [20362688, 20364420]      + |     53552  uc001yte.1
+    ##      [2]    chr15   [20487997, 20496811]      + |     53553  uc001ytf.1
+    ##      [3]    chr15   [20723929, 20727150]      + |     53554  uc001ytj.3
+    ##      [4]    chr15   [20739312, 20739342]      + |     53555  uc021sex.1
+    ##      [5]    chr15   [20742235, 20742263]      + |     53556  uc010tzb.1
+    ##      ...      ...                    ...    ... .       ...         ...
+    ##   [1728]    chr15 [102506273, 102507991]      + |     55279  uc002cdj.3
+    ##   [1729]    chr15 [102511401, 102513250]      + |     55280  uc031qum.1
+    ##   [1730]    chr15 [102513423, 102516808]      + |     55281  uc002cdq.3
+    ##   [1731]    chr15 [102513423, 102516808]      + |     55282  uc010bpo.3
+    ##   [1732]    chr15 [102514398, 102516808]      + |     55283  uc002cdr.3
+    ##   -------
+    ##   seqinfo: 1 sequence from hg19 genome
 
     # fetch the promoter regions from txdb
     pr <- promoters(txdb)
@@ -76,7 +93,7 @@ How do the exons compare with the transcripts?
 
     length(tx)
 
-    ## [1] 1732
+    ## [1] 3337
 
     # widths
     width(ex) %>%
@@ -89,7 +106,7 @@ How do the exons compare with the transcripts?
         summary()
 
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    ##      20      93   11630   39890   46530  887000
+    ##      20      95   13390   40230   45810  887000
 
     # ranges
     range(ex)
@@ -104,10 +121,11 @@ How do the exons compare with the transcripts?
 
     range(tx)
 
-    ## GRanges object with 1 range and 0 metadata columns:
+    ## GRanges object with 2 ranges and 0 metadata columns:
     ##       seqnames                ranges strand
     ##          <Rle>             <IRanges>  <Rle>
     ##   [1]    chr15 [20362688, 102516808]      +
+    ##   [2]    chr15 [20319595, 102519296]      -
     ##   -------
     ##   seqinfo: 1 sequence from hg19 genome
 
@@ -126,7 +144,7 @@ How do the exons compare with the transcripts?
         summary()
 
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    ##   0.000   0.000   1.000   1.806   3.000  17.000
+    ##   0.000   1.000   2.000   2.289   3.000  17.000
 
 Grouping ranges
 ---------------
