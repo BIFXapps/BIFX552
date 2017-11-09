@@ -1,0 +1,9 @@
+*.Rmd
+*.md
+*.docx
+*.fastq
+*.fasta
+*.R
+*.Rhistory
+*.DS_Store
+*~
