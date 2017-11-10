@@ -31,13 +31,13 @@ the same seed for both commands):
 fastqc
 ------
 
-The
-(fastqc)\[<https://www.bioinformatics.babraham.ac.uk/projects/fastqc/>\]
+The [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 program is a handy way to quickly generate nice figures showing the
 distribution of quality scores as well as run quality control checks on
 several other aspects of the reads. I ran the entire
-*SRR077485\_1.filt.fastq.gz* file, and the results can be explored
-(here)\[<https://github.com/BIFXapps/BIFX552/blob/master/Labs/SRR077485_1.filt_fastqc/fastqc_report.html>\].
+*SRR077485\_1.filt.fastq.gz* file through `fastqc`, and the results can
+be explored
+[here](https://bifxapps.github.io/BIFX552/SRR077485_1.filt_fastqc/fastqc_report.html).
 The output is organized into the following areas:
 
 -   Basic statistics: A brief overview of the entire report.
