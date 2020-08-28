@@ -15,24 +15,29 @@ Bioconductor, tools for manipulating sequence data, and creation of
 pipelines.
 
 -   Instructor: Randall Johnson, PhD
--   Office Hours: In-person office hours will be held Thursdays
-    immediately after class, and online office hours will be held Monday
-    evenings from 8:30 to 9:30 PM. During online office hours, the
-    Blackboard discussion thread titled "Office Hours" will be
-    actively monitored.
+-   Virtual office hours will be held at the following times:
+    -   Mondays at 12 - 1 PM
+    -   Wednesdays at 8 - 9 AM
+    -   Thursdays immediately after the weekly live coding demo starting
+        at 5:30
 -   Prerequisites: BIFX 503
--   Textbook: Bioinformatics Data Skills: Reproducible and Robust
-    Research with Open Source Tools 1st Edition, by Vince Buffalo,
-    O'Reilly Media (2015)
--   Communications: All course communications will be posted
-    on Blackboard. In order to receive timely notifications, it is
+-   Textbooks: We will not be using a textbook this term, but you may
+    find the following helpful. All are freely available online.
+    -   [R for Data Science](https://r4ds.had.co.nz/)
+    -   [Advanced R](https://adv-r.hadley.nz/)
+    -   [R Packages](https://r-pkgs.org/)
+-   Communications: All course communications will be posted on
+    Blackboard. In order to receive timely notifications, it is
     recommended that you do one or more of the following:
     -   Check Blackboard often
     -   Set your Blackboard email notifications to alert you when
         something is posted
-    -   Download the phone app and enable push notifications (this may
-        not be the best option this term, as the app was just released
-        and seems to be a little limited).
+    -   Try the phone app
+-   Code of Conduct: We want to foster a safe, enjoyable and productive
+    learning environment. People like you make our program a better. To
+    meet this end, all participants will be expected to follow the
+    course code of conduct located in the course documents on
+    Blackboard.
 
 ### Learning Objectives
 
@@ -48,152 +53,119 @@ following:
 -   Stitching a series of commands and/or programs together into a
     reusable pipeline
 
-### Homework
+### Homework and Quizes
 
-In addition to weekly reading assignments, Blackboard modules containing
-instructional vignettes will need to be viewed. These modules will be
-followed by a short quiz to guage class understanding prior to class.
-Students will be given a score for each quiz, but only participation
-will be tracked for the purpose of grading (i.e. if you complete both
-the module and the quiz, full points will be awarded for grading
-purposes).
+There will be homework assignments based on each of the weekly coding
+demos. This will give you an opportunity to practice what we cover each
+week. Homework and quizzes will typically be due on Wednesday evening.
+
+### Live Coding Demos
+
+Live coding demos will be held each week on Thursday evenings at 5:30
+PM, and recordings will be posted on Blackboard for asynchronous viewing
+and review. Because Bioinformatics is such a fast-moving field, demos
+will be based on up-to-date, publicly available material from cutting
+edge experts from the [Data Carpentry](https://datacarpentry.org/) and
+[Bioconductor](https://bioc2020.bioconductor.org/workshops) communities.
 
 ### Grading
 
-Grades will be based on completion of homework, in-class participation,
-and two exams.
+Grades will be based on completion of homework, quizzes and two exams.
 
--   Homework - 30%
--   In-class participation - 30%
+-   Coding Demos - 30%
+-   Quizzes - 30%
 -   Mid-term - 20%
 -   Final exam - 20%
 
-### Weather
+### Tentative Class Schedule
 
-In the event of severe weather resulting in the closure of Hood College
-and the cancellation of a regularly scheduled class, the material from
-the missed class will be posted on blackboard, and at least two live
-chat sessions will be held to work through material and answer
-questions.
-
-### Tentative Schedule
-
-Reading assignments are from Buffalo's Bioinformatics Data Skills unless
-otherwise specified, and they should be read *prior* to class. More
-details on reading assignments will be given on
-[Blackboard](https://hood.blackboard.com/).
+An R proficiency quiz will be administered during the first week of
+class. Depending on how well the class does on this quiz, we may update
+this schedule starting with week 8.
 
 <table>
 <thead>
 <tr class="header">
-<th align="right">Week</th>
-<th></th>
-<th>Topics</th>
-<th>Reading</th>
+<th style="text-align: left;">Week</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Topics</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">1</td>
-<td>Aug 24</td>
-<td>Class intro </br> Unix command line</td>
-<td></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Aug 20</td>
+<td style="text-align: left;"><a href="https://github.com/BIFXapps/BIFX552">Class intro</a>, <a href="https://datacarpentry.org/organization-genomics/">Project Organization</a>, <a href="https://datacarpentry.org/shell-genomics/01-introduction/index.html">Introducing the Shell</a></td>
 </tr>
 <tr class="even">
-<td align="right">2</td>
-<td>Aug 31</td>
-<td>Intro to R</td>
-<td>Ch 8 selections</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Aug 27</td>
+<td style="text-align: left;"><a href="https://datacarpentry.org/shell-genomics/">Unix 1</a> (2 - 4)</td>
 </tr>
 <tr class="odd">
-<td align="right">3</td>
-<td>Sep 7</td>
-<td>R Scripting </br> flow control</td>
-<td>Ch 8 selections</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Sep 3</td>
+<td style="text-align: left;"><a href="https://datacarpentry.org/shell-genomics/">Unix 2</a> (5 - 6), <a href="https://swcarpentry.github.io/shell-novice/05-loop/index.html">Unix Loops</a></td>
 </tr>
 <tr class="even">
-<td align="right">4</td>
-<td>Sep 14</td>
-<td>Advanced R topics</td>
-<td></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Sep 10</td>
+<td style="text-align: left;"><a href="https://datacarpentry.org/wrangling-genomics/">Data wrangling</a> (1 - 4)</td>
 </tr>
 <tr class="odd">
-<td align="right">5</td>
-<td>Sep 21</td>
-<td>Project organization </br> Git</td>
-<td>Ch 2 </br> Ch 5 selections</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Sep 17</td>
+<td style="text-align: left;"><a href="https://datacarpentry.org/wrangling-genomics/05-automation/index.html">Process Automation</a>, Slurm</td>
 </tr>
 <tr class="even">
-<td align="right">6</td>
-<td>Sep 28</td>
-<td>Markdown </br> Advanced Git</td>
-<td>Ch 5 selections</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Sep 24</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/git-novice/">Git</a> (1 - 13)</td>
 </tr>
 <tr class="odd">
-<td align="right">7</td>
-<td>Oct 6</td>
-<td>Advanced Unix tricks</td>
-<td>Ch 7</td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Oct 1</td>
+<td style="text-align: left;">Exam</td>
 </tr>
 <tr class="even">
-<td align="right">8</td>
-<td>Oct 12</td>
-<td><bf> Mid Term Exam </bf></td>
-<td></td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Oct 8</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">Intro to R</a> (1 - 4)</td>
 </tr>
 <tr class="odd">
-<td align="right">9</td>
-<td>Oct 19</td>
-<td>Bioinformatics data</td>
-<td>Ch 6</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">Oct 15</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">R data.frames</a> (5 - 6), <a href="https://swcarpentry.github.io/r-novice-gapminder/07-control-flow/index.html">R Control Flow</a></td>
 </tr>
 <tr class="even">
-<td align="right">10</td>
-<td>Oct 26</td>
-<td>Genomic Ranges</td>
-<td>Ch 9</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Oct 22</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2/index.html">R Graphics</a>, <a href="https://swcarpentry.github.io/r-novice-gapminder/09-vectorization/index.html">R Vectorization</a>, <a href="https://swcarpentry.github.io/r-novice-gapminder/10-functions/index.html">R Functions</a></td>
 </tr>
 <tr class="odd">
-<td align="right">11</td>
-<td>Nov 2</td>
-<td>FASTA and FASTQ data</td>
-<td>Ch 10</td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">Oct 29</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">R Advanced Data</a> (11 - 14)</td>
 </tr>
 <tr class="even">
-<td align="right">12</td>
-<td>Nov 9</td>
-<td>Sequence alignment</td>
-<td>Ch 11</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">Nov 5</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/index.html">R Reports</a>, <a href="https://swcarpentry.github.io/r-novice-gapminder/16-wrap-up/index.html">R Software Tips</a></td>
 </tr>
 <tr class="odd">
-<td align="right">13</td>
-<td>Nov 16</td>
-<td>Shell scripting</td>
-<td>Ch 12</td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">Nov 12</td>
+<td style="text-align: left;"><a href="https://github.com/johnsonra/pipeRx">Pipelines</a></td>
 </tr>
 <tr class="even">
-<td align="right"></td>
-<td>Nov 23</td>
-<td>Thanksgiving!</td>
-<td></td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">Nov 19</td>
+<td style="text-align: left;">Revew / Final Exam</td>
 </tr>
 <tr class="odd">
-<td align="right">14</td>
-<td>Nov 30</td>
-<td>Pipelining with Snakemake</td>
-<td></td>
-</tr>
-<tr class="even">
-<td align="right">15</td>
-<td>Dec 7</td>
-<td>Containers </br> Review</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td align="right">16</td>
-<td>Dec 14</td>
-<td><bf> Final Exam </bf></td>
-<td></td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Nov 24</td>
+<td style="text-align: left;">Exam Due</td>
 </tr>
 </tbody>
 </table>
