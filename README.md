@@ -105,17 +105,17 @@ this schedule starting with week 8.
 <tr class="odd">
 <td style="text-align: left;">3</td>
 <td style="text-align: left;">Sep 3</td>
-<td style="text-align: left;"><a href="https://datacarpentry.org/shell-genomics/">Unix 2</a> (5 - 6), <a href="https://swcarpentry.github.io/shell-novice/05-loop/index.html">Unix Loops</a></td>
+<td style="text-align: left;"><a href="https://datacarpentry.org/shell-genomics/">Unix 2</a> (5 - 6), Loop and Script Practice</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">4</td>
 <td style="text-align: left;">Sep 10</td>
-<td style="text-align: left;"><a href="https://datacarpentry.org/wrangling-genomics/">Data wrangling</a> (1 - 4)</td>
+<td style="text-align: left;">Regular Expressions Practice, Slurm, <a href="https://datacarpentry.org/wrangling-genomics/">Data wrangling</a> (1 - 3)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">5</td>
 <td style="text-align: left;">Sep 17</td>
-<td style="text-align: left;"><a href="https://datacarpentry.org/wrangling-genomics/05-automation/index.html">Process Automation</a>, Slurm</td>
+<td style="text-align: left;"><a href="https://datacarpentry.org/wrangling-genomics/04-variant_calling/index.html">Variant Calling Workflow</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">6</td>
@@ -130,12 +130,12 @@ this schedule starting with week 8.
 <tr class="even">
 <td style="text-align: left;">8</td>
 <td style="text-align: left;">Oct 8</td>
-<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">Intro to R</a> (1 - 4)</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">R Intro</a> (1-3)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">9</td>
 <td style="text-align: left;">Oct 15</td>
-<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">R data.frames</a> (5 - 6), <a href="https://swcarpentry.github.io/r-novice-gapminder/07-control-flow/index.html">R Control Flow</a></td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/06-data-subsetting/index.html">Subsetting Data</a>, <a href="https://swcarpentry.github.io/r-novice-gapminder/07-control-flow/index.html">R Control Flow</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">10</td>
@@ -145,7 +145,7 @@ this schedule starting with week 8.
 <tr class="odd">
 <td style="text-align: left;">11</td>
 <td style="text-align: left;">Oct 29</td>
-<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">R Advanced Data</a> (11 - 14)</td>
+<td style="text-align: left;"><a href="https://swcarpentry.github.io/r-novice-gapminder/">R Advanced Data</a> (11, 13-14)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">12</td>
@@ -155,7 +155,7 @@ this schedule starting with week 8.
 <tr class="odd">
 <td style="text-align: left;">13</td>
 <td style="text-align: left;">Nov 12</td>
-<td style="text-align: left;"><a href="https://github.com/johnsonra/pipeRx">Pipelines</a></td>
+<td style="text-align: left;">Pipelines with Snakemake</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">14</td>
